@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.Services", "TunZhou.Services\TunZhou.Services.csproj", "{6B9170D8-69E5-4371-8C74-843632F75945}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.Repositories", "TunZhou.Repositories\TunZhou.Repositories.csproj", "{C25DD662-9C0D-46DF-9AEE-F43A9A029A4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.DtoModel", "TunZhou.DtoModel\TunZhou.DtoModel.csproj", "{0E8F20F0-050F-4788-AEC1-B7F727DEEDBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.Core", "TunZhou.Core\TunZhou.Core.csproj", "{A2ACFEC4-BE7F-4A91-A7A4-177B34011F3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.Web", "TunZhou.Web\TunZhou.Web.csproj", "{485374B4-9D01-45E8-9C95-038DA5943F41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.API", "TunZhou.API\TunZhou.API.csproj", "{69A85AA8-104A-4985-A3F6-1BC1B50674FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunZhou.Persistence", "Persistence\TunZhou.Persistence.csproj", "{7C3C706E-3F7E-4612-9F93-F577F638641C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B9170D8-69E5-4371-8C74-843632F75945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9170D8-69E5-4371-8C74-843632F75945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9170D8-69E5-4371-8C74-843632F75945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9170D8-69E5-4371-8C74-843632F75945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25DD662-9C0D-46DF-9AEE-F43A9A029A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25DD662-9C0D-46DF-9AEE-F43A9A029A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25DD662-9C0D-46DF-9AEE-F43A9A029A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25DD662-9C0D-46DF-9AEE-F43A9A029A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8F20F0-050F-4788-AEC1-B7F727DEEDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8F20F0-050F-4788-AEC1-B7F727DEEDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8F20F0-050F-4788-AEC1-B7F727DEEDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8F20F0-050F-4788-AEC1-B7F727DEEDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2ACFEC4-BE7F-4A91-A7A4-177B34011F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2ACFEC4-BE7F-4A91-A7A4-177B34011F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2ACFEC4-BE7F-4A91-A7A4-177B34011F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2ACFEC4-BE7F-4A91-A7A4-177B34011F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485374B4-9D01-45E8-9C95-038DA5943F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485374B4-9D01-45E8-9C95-038DA5943F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485374B4-9D01-45E8-9C95-038DA5943F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485374B4-9D01-45E8-9C95-038DA5943F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A85AA8-104A-4985-A3F6-1BC1B50674FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A85AA8-104A-4985-A3F6-1BC1B50674FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A85AA8-104A-4985-A3F6-1BC1B50674FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A85AA8-104A-4985-A3F6-1BC1B50674FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3C706E-3F7E-4612-9F93-F577F638641C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3C706E-3F7E-4612-9F93-F577F638641C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3C706E-3F7E-4612-9F93-F577F638641C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3C706E-3F7E-4612-9F93-F577F638641C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {367DE452-8719-45E0-98BB-8DE71FF0B696}
+	EndGlobalSection
+EndGlobal

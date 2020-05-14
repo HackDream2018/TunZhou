@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <script src="~/js/CityProper/jquery-1.8.3.min.js"></script>
+    <script src="~/plug-in/vue.js"></script>
+    <script src="~/plug-in/element-ui/lib/index.js"></script>
+    <script src="~/js/helpers.js"></script>
+    <script src="~/js/ajaxHandler.js"></script>
+</head>
+<body>
+    <div style="width:100%">
+        <header>
+        </header>
+        @RenderBody()
+    </div>
+</body>
+@RenderSection("Scripts", required: false)
+</html>
+
