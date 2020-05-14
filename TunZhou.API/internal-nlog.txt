@@ -1,0 +1,56 @@
+2020-05-14 14:04:32.9825 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:04:32.9919 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:05:25.3619 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:05:25.3619 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:12:19.8929 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'file' not found for logging rule: *.
+2020-05-14 14:12:19.8929 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:12:19.8929 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:12:19.9274 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2020-05-14 14:12:19.9274 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile
+2020-05-14 14:12:50.9627 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'file' not found for logging rule: *.
+2020-05-14 14:12:50.9627 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:12:50.9627 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:12:51.0295 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2020-05-14 14:12:51.0295 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile
+2020-05-14 14:13:41.2607 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:13:41.2607 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:19:18.3662 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:19:18.3662 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:19:32.3440 Error Exception when parsing C:\Users\Administrator\source\repos\TunZhou\TunZhou.API\nlog.config.  Exception: System.ArgumentException: Target name cannot be null
+Parameter name: name
+   at NLog.Config.LoggingConfiguration.AddTarget(String name, Target target)
+   at NLog.Config.LoggingConfigurationParser.ParseTargetsElement(ILoggingConfigurationElement targetsElement)
+   at NLog.Config.LoggingConfigurationParser.ParseNLogSection(ILoggingConfigurationElement configSection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+2020-05-14 14:19:32.4050 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\TunZhou\TunZhou.API\nlog.config.  ---> System.ArgumentException: Target name cannot be null
+Parameter name: name
+   at NLog.Config.LoggingConfiguration.AddTarget(String name, Target target)
+   at NLog.Config.LoggingConfigurationParser.ParseTargetsElement(ILoggingConfigurationElement targetsElement)
+   at NLog.Config.LoggingConfigurationParser.ParseNLogSection(ILoggingConfigurationElement configSection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2020-05-14 14:19:32.4050 Warn NLog Config Reload() failed. Invalid XML?
+2020-05-14 14:20:19.2512 Error Exception when parsing C:\Users\Administrator\source\repos\TunZhou\TunZhou.API\nlog.config.  Exception: System.ArgumentException: Target name cannot be null
+Parameter name: name
+   at NLog.Config.LoggingConfiguration.AddTarget(String name, Target target)
+   at NLog.Config.LoggingConfigurationParser.ParseTargetsElement(ILoggingConfigurationElement targetsElement)
+   at NLog.Config.LoggingConfigurationParser.ParseNLogSection(ILoggingConfigurationElement configSection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+2020-05-14 14:20:19.2799 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\Administrator\source\repos\TunZhou\TunZhou.API\nlog.config.  ---> System.ArgumentException: Target name cannot be null
+Parameter name: name
+   at NLog.Config.LoggingConfiguration.AddTarget(String name, Target target)
+   at NLog.Config.LoggingConfigurationParser.ParseTargetsElement(ILoggingConfigurationElement targetsElement)
+   at NLog.Config.LoggingConfigurationParser.ParseNLogSection(ILoggingConfigurationElement configSection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2020-05-14 14:21:26.8043 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'trace' not found for logging rule: *.
+2020-05-14 14:21:26.8043 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'exception' not found for logging rule: *.
+2020-05-14 14:34:38.3297 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'file' not found for logging rule: *.
