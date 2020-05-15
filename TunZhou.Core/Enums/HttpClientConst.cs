@@ -9,6 +9,6 @@ namespace TunZhou.Core.Enums
         /// <summary>
         /// tunzhou BaseAPI地址
         /// </summary>
-        public const string TunZhouApi_BaseAddress_CLIENT_NAME = "TunZhouApi_BaseAddress_CLIENT_NAME";
+        public const string TunZhouApi_BaseAddress_CLIENT_NAME = "TunZhouApi_BaseAddress_CLIENT_NAME"; 
     }
 }
