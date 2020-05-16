@@ -27,6 +27,8 @@ namespace TunZhou.Services.Interfaces
 
         bool Get<TValue>(string key, out TValue value) where TValue : class;
 
+        void ClearCacheForKey(string key);
+
         /// <summary>
         /// 移除所有缓存项，并返回移除缓存项的数量
         /// </summary>

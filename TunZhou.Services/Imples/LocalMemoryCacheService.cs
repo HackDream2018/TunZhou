@@ -90,7 +90,7 @@ namespace TunZhou.Services.Imples
             value = cacheValue as TValue;
             return true;
         }
-
+        public void ClearCacheForKey(string key) => MemoryCache.Remove(key);
         public int ClearAllCache()
         {
             var typeInfo = MemoryCache.GetType();
