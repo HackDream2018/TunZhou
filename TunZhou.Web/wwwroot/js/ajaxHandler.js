@@ -67,7 +67,11 @@ class AjaxHandler {
     }
 
     static createAjaxErrorHandler(error) {
-        return error ? error : (xhr, textStatus) => { alert('发生错误：' + textStatus); };
+        return error ? error : (xhr, textStatus) => {
+            if (!StringHelper.isNullOrWhiteSpace(textStatus)) {
+                alert('发生错误：' + textStatus);
+            }
+        };
     }
 
     static apiResponseHandler(response, success, error) {

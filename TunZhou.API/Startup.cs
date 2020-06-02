@@ -18,6 +18,7 @@ using Microsoft.Extensions.Options;
 using NLog.Extensions.Logging;
 using NLog.Web;
 using Swashbuckle.AspNetCore.Swagger;
+using TunZhou.API.Filters;
 using TunZhou.Core.Redis;
 
 namespace TunZhou.API
@@ -56,6 +57,10 @@ namespace TunZhou.API
                 throw ex;
             }
             services.AddMemoryCache();//注册缓存服务
+            //services.AddMvc(config =>
+            //{
+            //    config.Filters.Add(new SignVerificationFilter());
+            //});//注册过滤器，当注册后所有action都将公用该过滤器
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 

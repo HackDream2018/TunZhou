@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using TunZhou.API.Filters;
 using TunZhou.Core.Http;
 using TunZhou.DtoModel;
 using TunZhou.DtoModel.DTO;
@@ -27,6 +28,7 @@ namespace TunZhou.API.Controllers
         #endregion
         [HttpGet]
         [Route("GetData")]
+        [TypeFilter(typeof(SignVerificationFilter))]
         public async Task<ApiResponse<IEnumerable<UserDTO>>> GetData()
         {
             _logger.LogInformation("getdata test");
