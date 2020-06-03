@@ -59,14 +59,18 @@ namespace Persistence.DbBasicOperation
 
         public GridReader QueryMultiple(string sql, object parames = null, CommandType? commandType = null)
         {
-            var conn = ConnectionFactory.CreateDbConnection(ConnectionString);
-            return conn.QueryMultiple(sql: sql, param: parames, commandType: commandType);
+            using (var conn = ConnectionFactory.CreateDbConnection(ConnectionString))
+            {
+                return conn.QueryMultiple(sql: sql, param: parames, commandType: commandType);
+            }
         }
 
         public async Task<GridReader> QueryMultipleAsync(string sql, object parames = null, CommandType? commandType = null)
         {
-            var conn = ConnectionFactory.CreateDbConnection(ConnectionString);
-            return await conn.QueryMultipleAsync(sql: sql, param: parames, commandType: commandType);
+            using (var conn = ConnectionFactory.CreateDbConnection(ConnectionString))
+            {
+                return await conn.QueryMultipleAsync(sql: sql, param: parames, commandType: commandType);
+            }
         }
 
         public int ExecuteNonQueryWithLocalTransaction(string sql, object parames = null,
