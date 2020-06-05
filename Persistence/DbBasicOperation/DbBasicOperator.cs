@@ -61,7 +61,10 @@ namespace Persistence.DbBasicOperation
         {
             using (var conn = ConnectionFactory.CreateDbConnection(ConnectionString))
             {
-                return conn.QueryMultiple(sql: sql, param: parames, commandType: commandType);
+                using (var multi = conn.QueryMultiple(sql: sql, param: parames, commandType: commandType))
+                {
+                    return multi;
+                }
             }
         }
 
@@ -69,7 +72,10 @@ namespace Persistence.DbBasicOperation
         {
             using (var conn = ConnectionFactory.CreateDbConnection(ConnectionString))
             {
-                return await conn.QueryMultipleAsync(sql: sql, param: parames, commandType: commandType);
+                using (var multi = await conn.QueryMultipleAsync(sql: sql, param: parames, commandType: commandType))
+                {
+                    return multi;
+                }
             }
         }
 
