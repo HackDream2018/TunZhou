@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebSocket测试</title>
+    <script src="js/CityProper/jquery-1.8.3.min.js"></script>
+    <style>
+        .div1 {
+            height: 88px;
+            width: 173px;
+            border: 1px solid blue;
+            margin: auto;
+        }
+
+        h4 {
+            margin: auto;
+        }
+    </style>
+    <script>
+        var wsImpl = window.WebSocket || window.MozWebSocket;
+        window.ws = new wsImpl('ws://127.0.0.1:30005');
+        $(function () {
+            //初始化socket
+            connect();
+        })
+        //实例化websocket，关闭websocket
+        function connect() {
+
+            // create a new websocket and connect
+            // when data is comming from the server, this metod is called
+            ws.onmessage = function (evt) {
+                alert(evt.data);
+            };
+            // when the connection is established, this method is called
+            ws.onopen = function () {
+                //open conne
+            };
+
+            // when the connection is closed, this method is called
+            ws.onclose = function () {
+                //close conne
+            }
+
+
+        }
+        //实例化websocket，关闭websocket
+
+        function send() {
+            var message = $("#Text1").val();
+
+            //点击发送后，将得到的data给socket
+            try {
+                ws.send(message);
+            }
+            catch (exception) {
+                alert("发送数据出错");
+                ws.onclose();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="div1">
+        <input type="text" id="Text1" />
+        <input type="button" onclick="send()" value="发送数据" />
+    </div>
+</body>
+</html>  
